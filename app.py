@@ -74,7 +74,7 @@ def preprocess(text):
 @st.cache_resource
 def load_and_train():
     # Same parsing logic as the notebook
-    df = pd.read_csv("Resume.csv", header=None)
+    df = pd.read_csv("resume_small.py", header=None)
     df = df[0].str.split(",", n=4, expand=True)
     df.columns = df.iloc[0]
     df = df.iloc[1:].reset_index(drop=True)
