@@ -10,3 +10,4 @@ nltk
 spacy
 joblib
 python-docx
+beautifulsoup4
